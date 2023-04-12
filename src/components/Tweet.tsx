@@ -1,6 +1,10 @@
-export function Tweet(){
+type TweetProps = {
+    text?:string;
+}
+
+export function Tweet(props: TweetProps){
     return(
-        <div>Tweet</div>
+        <p>{props.text}</p>
     );
 
 }
